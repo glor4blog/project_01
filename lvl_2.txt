@@ -62,9 +62,15 @@ def quarter_of(month):
    if 0 < month < 13:
     return f'Месяц {month} ({Месяцы[month][0]}) является частью {Месяцы[month ][1]} квартала'
    
+
+
+for i in [0,1,2,8,41]:
+  print(quarter_of(i))
+
+
 print(quarter_of(6)) 
 
-Возвращает:  Месяц 6 (Июнь) является частью второго квартала
+
 
 
 
