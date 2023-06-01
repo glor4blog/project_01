@@ -64,4 +64,69 @@ def quarter_of(month):
    
 print(quarter_of(6)) 
 
+for i in [0,1,2,8,41]:
+  print(quarter_of(i))
+
 Возвращает:  Месяц 6 (Июнь) является частью второго квартала
+
+
+# Задача 2.3.
+
+# Напишите функцию, которая принимает цифры от 0 до 9 и возвращает значение прописью.
+# Например,
+# switch_it_up(1) -> 'One'
+# switch_it_up(3) -> 'Three'
+# switch_it_up(10000) -> None
+# Использовать условный оператор if-elif-else нельзя!
+
+def switch_it_up(number):
+    pass
+
+# Задача 2.4.
+
+# Пункт A.
+# Напишите функцию, которая удаляет все восклицательные знаки из заданной строк.
+# Например,
+# foo("Hi! Hello!") -> "Hi Hello"
+# foo("") -> ""
+# foo("Oh, no!!!") -> "Oh, no"
+
+def remove_exclamation_marks(s):
+    pass
+
+
+# Пункт B.
+# Удалите восклицательный знак из конца строки. 
+# remove("Hi!") == "Hi"
+# remove("Hi!!!") == "Hi!!"
+# remove("!Hi") == "!Hi"
+
+def remove_last_em(s):
+    pass
+
+
+def remove_last_em(s):
+   if s[-1] == '!':
+    return s[:-1]
+   else:
+     return s
+
+for i in ['Hello!', 'Hello', 'Hello!!!']:
+  print(remove_last_em(i))
+
+# Дополнительно
+
+# Пункт С.
+# Удалите слова из предложения, если они содержат ровно один восклицательный знак.
+# Слова разделены одним пробелом.
+# Например,
+# remove("Hi!") === ""
+# remove("Hi! Hi!") === ""
+# remove("Hi! Hi! Hi!") === ""
+# remove("Hi Hi! Hi!") === "Hi"
+# remove("Hi! !Hi Hi!") === ""
+# remove("Hi! Hi!! Hi!") === "Hi!!"
+# remove("Hi! !Hi! Hi!") === "!Hi!"
+
+def remove_word_with_one_em(s):
+    pass
